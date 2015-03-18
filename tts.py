@@ -1,7 +1,7 @@
 '''
 Created on Mar 13, 2014
 
-@author: Dario Bonino <dario.bonino@polito.it>
+@author: Dario Bonino <dario.bonino@gmail.com>
 
 Copyright (c) 2014 Dario Bonino
  

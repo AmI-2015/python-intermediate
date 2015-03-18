@@ -1,7 +1,7 @@
 '''
-Created on 06/mar/2014
+Created on 18/03/2015
 
-@author: Dario Bonino <dario.bonino@polito.it>
+@author: Dario Bonino <dario.bonino@gmail.com>
 
 Copyright (c) 2014 Dario Bonino
  
@@ -19,6 +19,7 @@ limitations under the License
 '''
 from subprocess import Popen, PIPE
 from mutagen import mp3
+import time
 
 def play(filename):
     
@@ -44,7 +45,11 @@ def play(filename):
     #play
     player.stdin.write("loadfile \"%s\"\n"%filename)
 
+    #play for 10s
+    time.sleep(10)
     
+    #stop
+    player.stdin.write("quit\n");
 
 if __name__ == '__main__':
     play(r'blues.mp3') #r stands for raw string
